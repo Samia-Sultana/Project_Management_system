@@ -1,11 +1,11 @@
-import React from 'react';
+
 import AdminNavbar from '../AdminNavbar/AdminNavbar';
 
-const AdminDashboard = ({ user, handleLogout }) => {
+const AdminDashboard = () => {
     return (
 
         <div className="main-wrapper">
-            <AdminNavbar user={user} handleLogout={handleLogout}></AdminNavbar>
+            <AdminNavbar ></AdminNavbar>
             
 
 
