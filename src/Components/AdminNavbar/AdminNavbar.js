@@ -348,7 +348,7 @@ const AdminNavbar = () => {
                                     </li>
                                     <li>
                                         <Link to="/task">
-                                            <i className="la la-rocket"></i> <span> Tasks</span>
+                                            <i className="la la-rocket"></i> <span> Task</span>
                                         </Link>
                                     </li>
                                 </ul>

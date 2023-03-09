@@ -27,16 +27,17 @@ const Login = () => {
           const data = await response.json();
            // Do something with the response data
           if (response.ok) {
-
+        
              localStorage.setItem("access_token", data.access_token);
              localStorage.setItem("user", JSON.stringify(data.user));
 
              var user = JSON.parse(localStorage.getItem("user"));
 
-             console.log(user);
+           
 
              if(localStorage.getItem("access_token") && (user.is_admin == "1")){
                 setRedirectToAdmin(true);
+                console.log(JSON.parse(localStorage.getItem("access_token")));
             }
             else if( (user.is_admin == "0") && localStorage.getItem("access_token") ){
                 setRedirectToEmployee(true);

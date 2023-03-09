@@ -17,6 +17,8 @@ import AdminDashboard from './Components/AdminDashboard/AdminDashboard';
 import EmployeeDashboard from './Components/EmployeeDashboard/EmployeeDashboard';
 import ProjectList from './Components/Project/ProjectList';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+import ProjectDetail from './Components/ProjectDetail/ProjectDetail';
+import Milestone from './Components/Milestone/Milestone';
 
 
 function App() {
@@ -47,6 +49,10 @@ function App() {
           />
 
           <Route path="/project" element={<ProjectList />} />
+
+          <Route path="/project/:id" element={<ProjectDetail />} />
+
+          <Route path="/milestone/:id" element={<Milestone />} />
           
           <Route path="*" element={<Navigate to="/" />} />
           
@@ -54,9 +60,6 @@ function App() {
         </Routes>
       </div>
     </Router>
-
-
-
 
   );
 }

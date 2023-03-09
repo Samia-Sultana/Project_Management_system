@@ -4,7 +4,9 @@ import AdminNavbar from '../AdminNavbar/AdminNavbar';
 const EmployeeDashboard = () => {
     return (
         <div className="main-wrapper">
+
             <AdminNavbar></AdminNavbar>
+
             <div class="page-wrapper">
 
                 <div class="content container-fluid">
